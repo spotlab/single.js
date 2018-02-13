@@ -7,7 +7,14 @@ Check out the [multi.js demo](http://fabianlindfors.se/singlejs/).
 
 Installation
 -----
-Clone or download the repository to your project and include both files in the min directory.
+
+Via Yarn
+
+```nodejs
+yarn add spotlab/single.js
+```
+
+Or clone or download the repository to your project and include both files in the min directory.
 
 ```html
 <link rel="stylesheet" type="text/css" href="singlejs/min/single.min.css">
