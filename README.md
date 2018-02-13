@@ -7,11 +7,11 @@ Check out the [multi.js demo](http://fabianlindfors.se/singlejs/).
 
 Installation
 -----
-Clone or download the repository to your project and include both files in the dist directory.
+Clone or download the repository to your project and include both files in the min directory.
 
 ```html
-<link rel="stylesheet" type="text/css" href="singlejs/dist/single.min.css">
-<script src="singlejs/dist/single.min.js"></script>
+<link rel="stylesheet" type="text/css" href="singlejs/min/single.min.css">
+<script src="singlejs/min/single.min.js"></script>
 ```
 
 Usage
