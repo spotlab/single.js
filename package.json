@@ -1,0 +1,17 @@
+{
+  "name": "single.js",
+  "version": "0.1.0",
+  "description": "A user-friendly replacement for select boxes with single attribute enabled (based on multi.js)",
+  "keywords": ["user-friendly", "select", "single", "simple"],
+  "homepage": "https://github.com/spotlab/single.js",
+  "license": "MIT",
+  "author": {
+    "name": "Spotlab",
+    "url": "https://www.spotlab.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spotlab/single.js.git"
+  },
+  "main": "./src/single.js",
+}
