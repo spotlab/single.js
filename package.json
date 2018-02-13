@@ -13,5 +13,5 @@
     "type": "git",
     "url": "https://github.com/spotlab/single.js.git"
   },
-  "main": "./src/single.js",
+  "main": "./src/single.js"
 }
