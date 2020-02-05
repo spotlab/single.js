@@ -2,11 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>multi.js Basic Example</title>
+        <title>multi.js ES6 Import Example</title>
 
         <!-- Include multi.js -->
         <link rel="stylesheet" type="text/css" href="../dist/multi.min.css" />
-        <script src="../dist/multi.min.js"></script>
 
         <style>
             /* Basic styling */
@@ -25,7 +24,8 @@
     </head>
     <body>
         <div class="container">
-            <h1>multi.js</h1>
+            <h1>multi.js ES6 Import</h1>
+            <h3>When running as <em>file:///</em> you may get a CORS error</h3>
 
             <form>
                 <select
@@ -51,7 +51,8 @@
             </form>
         </div>
 
-        <script>
+        <script type="module">
+            import multi from "../dist/multi-es6.min.js";
             var select = document.getElementById("fruit_select");
             multi(select, {
                 enable_search: false

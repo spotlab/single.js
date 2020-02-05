@@ -24,6 +24,14 @@
     background: #fff;
 }
 
+.single-wrapper .header {
+    color: #4f4f4f;
+    cursor: default;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
 .single-wrapper .item {
     cursor: pointer;
     display: block;
@@ -33,6 +41,17 @@
 .single-wrapper .item:hover {
     background: #ececec;
     border-radius: 2px;
+}
+
+.single-wrapper .item-group {
+    padding: 5px 10px;
+}
+
+.single-wrapper .item-group .group-label {
+    display: block;
+    font-size: 0.875rem;
+    opacity: 0.5;
+    padding: 5px 0;
 }
 
 .single-wrapper .search-input {
@@ -54,12 +73,12 @@
 
 .single-wrapper .non-selected-wrapper .item.disabled,
 .single-wrapper .selected-wrapper .item.disabled {
-  opacity: 0.5;
-  text-decoration: line-through;
+    opacity: 0.5;
+    text-decoration: line-through;
 }
 
 .single-wrapper .non-selected-wrapper .item.disabled:hover,
 .single-wrapper .selected-wrapper .item.disabled:hover {
-  background: inherit;
-  cursor: inherit;
+    background: inherit;
+    cursor: inherit;
 }

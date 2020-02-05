@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>multi.js Basic Example</title>
+        <title>multi.js Optgroups Example</title>
 
         <!-- Include multi.js -->
         <link rel="stylesheet" type="text/css" href="../dist/multi.min.css" />
@@ -29,23 +29,25 @@
 
             <form>
                 <select
-                    required
                     multiple="multiple"
                     name="favorite_fruits"
                     id="fruit_select"
                 >
-                    <option>Apple</option>
-                    <option>Banana</option>
-                    <option>Blueberry</option>
-                    <option>Cherry</option>
-                    <option>Coconut</option>
-                    <option>Grapefruit</option>
-                    <option>Kiwi</option>
-                    <option>Lemon</option>
-                    <option>Lime</option>
-                    <option>Mango</option>
-                    <option>Orange</option>
-                    <option>Papaya</option>
+                    <optgroup label="Good fruit">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Blueberry</option>
+                        <option>Cherry</option>
+                    </optgroup>
+                    <optgroup label="Better fruit">
+                        <option>Grapefruit</option>
+                        <option>Kiwi</option>
+                        <option>Lemon</option>
+                        <option>Lime</option>
+                        <option>Mango</option>
+                        <option>Orange</option>
+                        <option>Papaya</option>
+                    </optgroup>
                 </select>
                 <button type="submit">Submit</button>
             </form>
@@ -54,7 +56,7 @@
         <script>
             var select = document.getElementById("fruit_select");
             multi(select, {
-                enable_search: false
+                enable_search: true
             });
         </script>
     </body>

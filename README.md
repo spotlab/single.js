@@ -3,7 +3,7 @@ single.js
 
 single.js is a user-friendly replacement for select boxes with single attribute inspired by multi.js. We have keeped the design of multi.js.
 
-Check out the [multi.js demo](http://fabianlindfors.se/singlejs/).
+Check out the [multi.js demo](http://fabianlindfors.se/multijs/).
 
 Installation
 -----
@@ -49,4 +49,4 @@ $( '#your_select_element' ).single();
 
 License
 -----
-single.js is licensed under [MIT](https://github.com/Fabianlindfors/single.js/blob/master/LICENSE).
+single.js is licensed under [MIT](https://github.com/spotlab/single.js/blob/master/LICENSE).
