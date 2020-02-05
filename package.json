@@ -1,8 +1,13 @@
 {
   "name": "single.js",
-  "version": "0.1.0",
-  "description": "A user-friendly replacement for select boxes with single attribute enabled (based on multi.js)",
-  "keywords": ["user-friendly", "select", "single", "simple"],
+  "version": "0.5.1",
+  "description": "A user-friendly replacement for select boxes with single attribute enabled (based on multi.js by Fabian Lindfors)",
+  "keywords": [
+    "user-friendly",
+    "select",
+    "single",
+    "simple"
+  ],
   "homepage": "https://github.com/spotlab/single.js",
   "license": "MIT",
   "author": {
@@ -13,5 +18,12 @@
     "type": "git",
     "url": "https://github.com/spotlab/single.js.git"
   },
-  "main": "./src/single.js"
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
 }

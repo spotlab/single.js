@@ -1,13 +1,12 @@
 /**
  * single.js
- * A user-friendly replacement for select boxes (based on multi.js : https://github.com/Fabianlindfors/multi.js)
+ * A user-friendly replacement for select boxes (based on multi.js by Fabian Lindfors : https://github.com/Fabianlindfors/multi.js)
  *
  * Author: Spotlab
  * License: MIT
  */
 var single = (function() {
-
-    var selectedValue = null;
+    var disabled_limit = false; // This will prevent to reset the "disabled" because of the limit at every click
 
     // Helper function to trigger an event on an element
     var trigger_event = function( type, el ) {
@@ -24,13 +23,7 @@ var single = (function() {
           return;
         }
 
-        if (option.selected){
-            option.selected = false;
-            selectedValue = null;
-        } else {
-            option.selected = true;
-            selectedValue = option.value;
-        }
+        option.selected = !option.selected;
 
         trigger_event( 'change', select );
     };
@@ -159,8 +152,10 @@ var single = (function() {
 
         wrapper.appendChild( non_selected );
         wrapper.appendChild( selected );
+
         wrapper.non_selected = non_selected;
         wrapper.selected = selected;
+        
         select.wrapper = wrapper;
 
         // Add single.js wrapper after select element
