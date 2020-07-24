@@ -1,6 +1,6 @@
 {
   "name": "single.js",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "description": "A user-friendly replacement for select boxes with single attribute enabled (based on multi.js by Fabian Lindfors)",
   "keywords": [
     "user-friendly",
