@@ -229,7 +229,7 @@ var single = (function() {
         select.parentNode.insertBefore(wrapper, select.nextSibling);
 
         // Get default value
-        if (select.value !== null){
+        if (select.value !== null) {
             selectedValue = select.value;
         }
 
