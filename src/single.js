@@ -93,20 +93,26 @@ var single = (function() {
                 select.wrapper.selected.appendChild(clone);
             }
 
+            var matchingOption = !query || (query && label.toLowerCase().indexOf(query.toLowerCase()) > -1);
+
             // Create group if entering a new optgroup
             if (option.parentNode.nodeName == "OPTGROUP" && option.parentNode != current_optgroup) {
                 current_optgroup = option.parentNode;
                 item_group = document.createElement("div");
                 item_group.className = "item-group";
 
-                if (option.parentNode.label) {
-                    var groupLabel = document.createElement("span");
-                    groupLabel.innerHTML = option.parentNode.label;
-                    groupLabel.className = "group-label";
-                    item_group.appendChild(groupLabel);
-                }
+                // add group only if not query or matching option found in group 
+                if (matchingOption) {
 
-                select.wrapper.non_selected.appendChild(item_group);
+                    if (option.parentNode.label) {
+                        var groupLabel = document.createElement("span");
+                        groupLabel.innerHTML = option.parentNode.label;
+                        groupLabel.className = "group-label";
+                        item_group.appendChild(groupLabel);
+                    }
+
+                    select.wrapper.non_selected.appendChild(item_group);
+                }
             }
 
             // Clear group if not inside optgroup
@@ -116,7 +122,7 @@ var single = (function() {
             }
 
             // Apply search filtering
-            if (!query || (query && label.toLowerCase().indexOf(query.toLowerCase()) > -1)) {
+            if (matchingOption) {
                 // Append to group if one exists, else just append to wrapper
                 if (item_group != null) {
                     item_group.appendChild(row);
